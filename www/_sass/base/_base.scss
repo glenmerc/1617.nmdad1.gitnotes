@@ -1,0 +1,262 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v7-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Montserrat-Regular'),
+       url('../fonts/montserrat-v7-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v7-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v7-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v7-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v7-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+
+*{
+	font-family: 'Montserrat'
+	}
+
+body {
+	background-color:rgba(34,56,63,1.0) !important; 
+	}
+	
+.push{
+	margin-top:150px;
+	padding-bottom:80px;
+	}
+	
+.margin{
+	margin-bottom:30px;
+	}	
+	
+.lightBlue {
+	color:rgba(98,171,199,1.0);
+	font-size:44px;
+	text-align:center;
+	}
+
+@media only screen and (max-device-width: 480px) {
+		
+    /* iPhone only */
+	.lightBlue {
+	color:rgba(98,171,199,1.0);
+	font-size:22px !important;
+	text-align:center;
+	}
+	
+	.lightBlue p {
+		font-size:16px !important;
+		}
+	
+}
+	
+.megaImg { 
+	width:100%;
+	}
+	
+.alignCenter {
+	text-align:center;
+	}	
+	
+.centerBox {
+	margin-top:3Opx;
+	}
+
+.navBrand {
+	width:20px;
+	}
+	
+.well {
+	background-color:#396a77 !important;
+	border-color:transparent !important;
+	}
+
+.white {
+	color:white;
+	}
+	
+.form-control {
+	;
+	}
+	
+.posterSize{
+	width:100%;
+	}
+
+.movieVast{
+	max-height:210px;
+	margin-bottom: 110px;
+	width:100%;
+	}
+	
+.movieId{
+	height:230px;
+	}
+	
+@media only screen and (max-device-width: 320px) {
+		
+    /* iPhone 5 only */
+	.movieVast{
+	margin-bottom: 50px;
+	width:100%;
+	}
+	
+	.similarPoster {
+	width: 100%;
+	height: 70px !important;
+	margin-bottom:20px;
+	border:0;
+	}
+	
+	.movieId{
+	height:170px !important;
+	}
+	
+	#seen .white{
+	font-size:8px;
+	margin:4px;
+	}
+	
+	#wish .white{
+	font-size:8px;
+	margin:4px;
+	}
+	
+}
+
+@media only screen and (max-device-width: 414px) {
+		
+    /* iPhone 6 only */
+	.movieVast{
+	margin-bottom: 50px;
+	width:100%;
+	}
+	
+	.movieId{
+	height:200px;
+	}
+	
+	.similarPoster {
+	width: 100%;
+	height:90px !important;
+	margin-bottom:20px;
+	border:0;
+	}
+	
+	#seen .white{
+	font-size:10px;
+	margin:4px;
+	}
+	
+	#wish .white{
+	font-size:10px;
+	margin:4px;
+	}
+	
+}
+	
+.textVast{
+	height:30px;
+	color:white;
+	}
+	
+.ptit{
+	font-size:20px;
+	font-style:italic;
+	margin-top:10px;
+	}
+	
+.listGenre {
+	border: none;
+	background-color:white !important;
+	}
+
+a {
+	display:block;
+	}
+
+a:hover {
+	display:block;
+	text-decoration:none !important;
+	}
+
+.background {
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center center;
+	background-attachment:fixed
+	}
+	
+.layer {
+	background-color: rgba(34,56,63,0.85);
+    position:relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+	}
+	
+.link {
+	color:#8BAAB3;
+	text-decoration:none;
+	display:inline;
+	}
+
+.link:hover {
+	color:black;
+	text-decoration:none;
+	display:inline;
+	}
+	
+.margin {
+	margin-top:20px;
+	}
+	
+.cinemaPhoto {
+	width:100%;
+	margin-top:25px;
+	}
+	
+.similarPoster {
+	width: 100%;
+	margin-bottom:20px;
+	height:130px;
+	border:0;
+	}
+	
+#genreOptionsInput {
+	height: 35px;
+	width:100%;
+	}
+	
+	
+.hide {
+	display:none;
+	}
+	
+
+#seen .white{
+	font-size:14px;
+	margin:4px;
+	}
+	
+#wish .white{
+	font-size:14px;
+	margin:4px;
+	}
+	
+#btnGithub:hover {
+	color:white !important;
+	transform:translate(6px, -5px) !important;
+	}
+	
+#btnGoogle:hover {
+	color:white !important;
+	transform:translate(6px, -5px) !important;
+	}
+	
+#btnFacebook:hover {
+	color:white !important;
+	transform:translate(6px, -5px) !important;
+	}
+	

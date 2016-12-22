@@ -1,0 +1,91 @@
+<nav class="navbar navbar-inverse nav-color">
+	<div class="container">
+		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span> 
+      			</button>
+      			<a class="navbar-brand" href="index"><img class="navBrand" src="../../img/tv-xxl.png"/></a>
+    		</div>
+    		<div class="collapse navbar-collapse" id="myNavbar">
+    			<!--<form class="navbar-form navbar-left">
+  					<div class="input-group">
+    					<input type="text" class="form-control" placeholder="Search..." id="searchInput">
+    					<div class="input-group-btn">
+      						<button class="btn btn-default" type="button" id="submit">
+        						<i class="glyphicon glyphicon-search"></i>
+      						</button>
+    					</div>
+  					</div>
+				</form>-->
+                <ul class="nav navbar-nav navbar-left">
+        			<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">GENRES <span class="caret"></span></a>
+          				<ul class="dropdown-menu" id="genreDropdown">
+            				<li class="genreList" id="" value=""><a>Now Playing</a></li>
+                            <li role="separator" class="divider"></li>
+          				</ul>
+        			</li> 
+                    <div class="col-sm-3 col-md-8">
+        				<form class="navbar-form" role="search">
+        					<div class="input-group">
+           						<input type="text" class="form-control" id="search" placeholder="Search">
+           						<div class="input-group-btn">
+                				<button class="btn btn-default" id="btnSearch" value="100" type="button"><i class="glyphicon glyphicon-search"></i></button>
+            					</div>
+        					</div>
+        				</form>
+    				</div>      		
+      			</ul>
+      			<ul class="nav navbar-nav navbar-right">
+        			<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">THEATRES <span class="caret"></span></a>
+          				<ul class="dropdown-menu" id="">
+            				<li class="theatreList" value="0"><a>Studio Skoop</a></li>
+                            <li class="theatreList" value="1"><a>Kinepolis</a></li>
+                            <li class="theatreList" value="2"><a>Sphinx</a></li>
+          				</ul>
+        			</li>
+        			<li><a href="contact"> CONTACT</a></li>
+                    <li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="logged-in">LOGIN <span class="caret"></span></a>
+          				<ul class="dropdown-menu" id="loginMenu">
+            				<div class="login">
+								<div class="login-screen">
+									<div class="app-title">
+										<h1 class="white" id="loginHeader">Login</h1>
+									</div>
+									<div class="login-form">
+                                    	<div class="control-group">
+											<input  id="txtEmail" type="email" class="login-field" value="" placeholder="Email">
+											<label class="login-field-icon fui-user" for="login-name"></label>
+										</div>
+										<div class="control-group">
+											<input id="txtPassword" type="password" class="login-field" value="" placeholder="Password">
+											<label class="login-field-icon fui-lock" for="login-pass"></label>
+										</div>
+                                        <button id="btnLogin" class="btn btn-danger btn-large btn-block">Login</button><p id="orSpan" class="white" style="margin:5px;">OR</p>
+										<button id="btnSignUp" class="btn btnLogin btn-primary btn-large btn-block">Sign up</button>
+										
+                                        <div class="marginSocial">
+                							<div class="col-md-4 col-xs-4"><a id="btnFacebook" class="btn btn-social-icon btn-lg btn-facebook "><i class="fa fa-facebook"></i></a></div>
+
+                							<div class="col-md-4 col-xs-4"><a id="btnGoogle" class="btn btn-social-icon btn-lg btn-google "><i class="fa fa-google"></i></a></div>
+                                            <div class="col-md-4 col-xs-4"><a id="btnGithub" class="btn btn-social-icon btn-lg btn-github "><i class="fa fa-github"></i></a></div>
+                						</div>
+                                        <button id="btnSeen" class="btn btnLogin btn-primary btn-large btn-block hide">Seen Movies</button>
+                                        <button id="btnWish" class="btn btnLogin btn-primary btn-large btn-block hide">Wish List</button>
+                                        <button id="btnCalendar" class="btn btn-warning disabled btn-large btn-block hide">Calendar coming soon!</button>
+										<button id="btnLogout" class="btn btn-danger btn-large btn-block hide">Logout</button>
+									</div>
+								</div>
+							</div>
+          				</ul>
+        			</li>
+          		</ul>
+    		</div>
+  		</div>
+  	</div>
+</nav>

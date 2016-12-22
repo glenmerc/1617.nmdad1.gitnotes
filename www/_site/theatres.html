@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="nl">
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>New Media Design & Development I | NMDAD-I</title>
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-social/5.1.1/bootstrap-social.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  	<link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="/favicon/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+	<link rel="manifest" href="/favicon/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+</head>
+
+  <body>
+  	<nav class="navbar navbar-inverse nav-color">
+	<div class="container">
+		<div class="container-fluid">
+    		<div class="navbar-header">
+      			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span> 
+      			</button>
+      			<a class="navbar-brand" href="index"><img class="navBrand" src="../../img/tv-xxl.png"/></a>
+    		</div>
+    		<div class="collapse navbar-collapse" id="myNavbar">
+    			<!--<form class="navbar-form navbar-left">
+  					<div class="input-group">
+    					<input type="text" class="form-control" placeholder="Search..." id="searchInput">
+    					<div class="input-group-btn">
+      						<button class="btn btn-default" type="button" id="submit">
+        						<i class="glyphicon glyphicon-search"></i>
+      						</button>
+    					</div>
+  					</div>
+				</form>-->
+                <ul class="nav navbar-nav navbar-left">
+        			<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">GENRES <span class="caret"></span></a>
+          				<ul class="dropdown-menu" id="genreDropdown">
+            				<li class="genreList" id="" value=""><a>Now Playing</a></li>
+                            <li role="separator" class="divider"></li>
+          				</ul>
+        			</li> 
+                    <div class="col-sm-3 col-md-8">
+        				<form class="navbar-form" role="search">
+        					<div class="input-group">
+           						<input type="text" class="form-control" id="search" placeholder="Search">
+           						<div class="input-group-btn">
+                				<button class="btn btn-default" id="btnSearch" value="100" type="button"><i class="glyphicon glyphicon-search"></i></button>
+            					</div>
+        					</div>
+        				</form>
+    				</div>      		
+      			</ul>
+      			<ul class="nav navbar-nav navbar-right">
+        			<li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">THEATRES <span class="caret"></span></a>
+          				<ul class="dropdown-menu" id="">
+            				<li class="theatreList" value="0"><a>Studio Skoop</a></li>
+                            <li class="theatreList" value="1"><a>Kinepolis</a></li>
+                            <li class="theatreList" value="2"><a>Sphinx</a></li>
+          				</ul>
+        			</li>
+        			<li><a href="contact"> CONTACT</a></li>
+                    <li class="dropdown">
+          				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="logged-in">LOGIN <span class="caret"></span></a>
+          				<ul class="dropdown-menu" id="loginMenu">
+            				<div class="login">
+								<div class="login-screen">
+									<div class="app-title">
+										<h1 class="white" id="loginHeader">Login</h1>
+									</div>
+									<div class="login-form">
+                                    	<div class="control-group">
+											<input  id="txtEmail" type="email" class="login-field" value="" placeholder="Email">
+											<label class="login-field-icon fui-user" for="login-name"></label>
+										</div>
+										<div class="control-group">
+											<input id="txtPassword" type="password" class="login-field" value="" placeholder="Password">
+											<label class="login-field-icon fui-lock" for="login-pass"></label>
+										</div>
+                                        <button id="btnLogin" class="btn btn-danger btn-large btn-block">Login</button><p id="orSpan" class="white" style="margin:5px;">OR</p>
+										<button id="btnSignUp" class="btn btnLogin btn-primary btn-large btn-block">Sign up</button>
+										
+                                        <div class="marginSocial">
+                							<div class="col-md-4 col-xs-4"><a id="btnFacebook" class="btn btn-social-icon btn-lg btn-facebook "><i class="fa fa-facebook"></i></a></div>
+
+                							<div class="col-md-4 col-xs-4"><a id="btnGoogle" class="btn btn-social-icon btn-lg btn-google "><i class="fa fa-google"></i></a></div>
+                                            <div class="col-md-4 col-xs-4"><a id="btnGithub" class="btn btn-social-icon btn-lg btn-github "><i class="fa fa-github"></i></a></div>
+                						</div>
+                                        <button id="btnSeen" class="btn btnLogin btn-primary btn-large btn-block hide">Seen Movies</button>
+                                        <button id="btnWish" class="btn btnLogin btn-primary btn-large btn-block hide">Wish List</button>
+                                        <button id="btnCalendar" class="btn btn-warning disabled btn-large btn-block hide">Calendar coming soon!</button>
+										<button id="btnLogout" class="btn btn-danger btn-large btn-block hide">Logout</button>
+									</div>
+								</div>
+							</div>
+          				</ul>
+        			</li>
+          		</ul>
+    		</div>
+  		</div>
+  	</div>
+</nav>
+    <div class="container">
+    <div class="col-md-12 col-xs-12">
+	<div class="col-md-12 well">
+			<div class="col-md-6" id="img"></div>
+			<div class="col-md-6">
+				<h1 id="naam" class="white"></h1>
+				<p id="info" class="white"></p>
+				<hr />
+				<p id="adres" class="white">Adres: </p>
+				<p id="telefoon" class="white">Telefoonnr.: </p>
+				<div id="website" class="white">Website: </div>
+			</div>
+	</div>
+	<div class="col-md-12 well">
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCoCItKNHRewPwW1Sdt4uQzeNCndroK_xA"></script>
+		<div id="map"></div>
+	</div>
+</div>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.typeit/4.2.3/typeit.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.6.3/firebase.js"></script>
+<script src="/js/initialize.js"></script>
+<script src="/js/login.js"></script>
+<script src="/js/main.js"></script>
+
+
+    <script src="/js/theatres.js"></script>
+
+<script src="/js/search.js"></script>
+
+  </body>
+</html>
